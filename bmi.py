@@ -1,3 +1,5 @@
+
+
 def calculate_bmi(height, weight):
     print("Height = " + str(height))
     print("Weight = " + str(weight))
@@ -13,3 +15,4 @@ def calculate_bmi(height, weight):
     print("BMI value = " + str(bmi))
     print(classification)
 calculate_bmi(weight=57, height=1.73)
+
