@@ -4,6 +4,7 @@ def main():
     temp_list = get_user_input()
     calc_average(temp_list)
     find_min_max(temp_list)
+    calc_median_temperature(temp_list)
 
 
 def display_main_menu():
@@ -41,6 +42,15 @@ def find_min_max(mylist):
     print("The minimum temperature is: ", minvalue)
     print("The maximum temperature is: ", maxvalue)
     return minvalue, maxvalue
+
+
+def calc_median_temperature(mylist):
+    import statistics
+    num = mylist
+    num.sort()
+    median = statistics.median(num)
+    print("The median temperature is ", median)
+    return median
 
 
 if __name__ == "__main__":
